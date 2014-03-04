@@ -1,0 +1,15 @@
+{
+  "name": "nhk-api",
+  "version": "0.0.0",
+  "description": "Node.js client for NHK API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nhk",
+    "api"
+  ],
+  "author": "yosuke furukawa",
+  "license": "MIT"
+}
