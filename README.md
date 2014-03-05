@@ -1,6 +1,10 @@
 NHK API for javascript [![Build Status](https://travis-ci.org/yosuke-furukawa/nhk_api.js.png?branch=master)](https://travis-ci.org/yosuke-furukawa/nhk_api.js)
 =====================
 
+
+[![browser support](https://ci.testling.com/yosuke-furukawa/nhk_api.js.png)
+](https://ci.testling.com/yosuke-furukawa/nhk_api)
+
 NHK has their televison program API.
 
 This library can call the API from javascript
