@@ -4,7 +4,7 @@
   "description": "Node.js client for NHK API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/*.js"
   },
   "keywords": [
     "nhk",
@@ -15,5 +15,8 @@
   "dependencies": {
     "lodash": "~2.4.1",
     "moment": "~2.5.1"
+  },
+  "devDependencies": {
+    "tape": "~2.10.2"
   }
 }
