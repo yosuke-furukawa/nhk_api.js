@@ -13,12 +13,10 @@
   ],
   "author": "yosuke furukawa",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "~2.4.1",
-    "moment": "~2.5.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "tape": "~2.10.2",
+    "moment": "~2.5.1",
     "uglifyify": "~1.2.3",
     "browserify": "~3.32.0"
   },
