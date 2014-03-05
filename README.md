@@ -1,4 +1,4 @@
-NHK API for javascript
+NHK API for javascript [![Build Status](https://travis-ci.org/yosuke-furukawa/nhk_api.js.png?branch=master)](https://travis-ci.org/yosuke-furukawa/nhk_api.js)
 =====================
 
 NHK has their televison program API.
