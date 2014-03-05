@@ -4,7 +4,8 @@
   "description": "Node.js client for NHK API",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "tape test/*.js",
+    "build": "browserify -g uglifyify index.js -o client/nhk_api.js"
   },
   "keywords": [
     "nhk",
@@ -17,6 +18,21 @@
     "moment": "~2.5.1"
   },
   "devDependencies": {
-    "tape": "~2.10.2"
+    "tape": "~2.10.2",
+    "uglifyify": "~1.2.3",
+    "browserify": "~3.32.0"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
   }
 }

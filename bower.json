@@ -1,0 +1,13 @@
+{
+  "name": "nhk_api.js",
+  "version": "0.0.0",
+  "main": "client/nhk_api.js",
+  "ignore": [
+    "**/.*",
+    "lib",
+    "test",
+    "conf",
+    "node_modules",
+    "components"
+  ]
+}

@@ -24,6 +24,3 @@ test(' get now url ', function (t) {
   });
 });
 
-
-
-
