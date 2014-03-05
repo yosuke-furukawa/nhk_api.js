@@ -1,11 +1,11 @@
 {
-  "name": "nhk-api",
-  "version": "0.0.0",
+  "name": "nhk_api",
+  "version": "0.1.0",
   "description": "Node.js client for NHK API",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js",
-    "build": "browserify -g uglifyify index.js -o client/nhk_api.js"
+    "build": "browserify -g uglifyify -r ./index.js:nhk_api -o client/nhk_api.js"
   },
   "keywords": [
     "nhk",
