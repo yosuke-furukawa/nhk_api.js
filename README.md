@@ -53,3 +53,8 @@ for client
 ```shell
 $ bower install nhk_api
 ```
+
+```html
+<!-- in browser -->
+<script src="components/nhk_api/client/nhk_api.js"></script>
+```
