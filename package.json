@@ -11,5 +11,9 @@
     "api"
   ],
   "author": "yosuke furukawa",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "moment": "~2.5.1"
+  }
 }
