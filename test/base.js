@@ -10,7 +10,7 @@ test(' format time 2014-03-05', function (t) {
 
   base._jpnize(now);
   var date = base._formatDate(now);
-  t.equal(date, "2014-03-05");
+  t.equal(date, "2014-03-05", date);
   t.end();
 });
 
@@ -24,6 +24,6 @@ test(' format time 2014-03-06', function (t) {
 
   base._jpnize(now);
   var date = base._formatDate(now);
-  t.equal(date, "2014-03-06");
+  t.equal(date, "2014-03-06", date);
   t.end();
 });
