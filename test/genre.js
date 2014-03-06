@@ -3,7 +3,7 @@ var test = require('tape');
 var moment = require('moment');
 
 // this apikey for test
-var apikey = "5K77uQA6JQi8GGWGHjnYdE9C0pcKAiQb";
+var apikey = process.env.NHK_API_KEY || require('../config/test.json').apikey;
 
 
 test(' genre url ', function (t) {

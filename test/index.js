@@ -2,8 +2,7 @@ var NHK = require('../index');
 var test = require('tape');
 
 // this apikey for test
-var apikey = "5K77uQA6JQi8GGWGHjnYdE9C0pcKAiQb";
-
+var apikey = process.env.NHK_API_KEY || require('../config/test.json').apikey;
 
 test(' has instance ', function (t) {
   var nhk = new NHK(apikey);

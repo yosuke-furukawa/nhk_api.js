@@ -3,7 +3,7 @@ var test = require('tape');
 var moment = require('moment');
 
 // this apikey for test
-var apikey = "5K77uQA6JQi8GGWGHjnYdE9C0pcKAiQb";
+var apikey = process.env.NHK_API_KEY || require('../config/test.json').apikey;
 
 
 test(' list url ', function (t) {
@@ -46,7 +46,7 @@ test(' list url tomorrow ', function (t) {
 
 test(' get url ', function (t) {
   var nhk = new NHK(apikey);
-  nhk.list.get("130", "g1", function(err, msg){ 
+  nhk.list.get("130", "g1", function(err, msg){
     t.notOk(err, "error is not found");
     t.ok(msg, "msg is truthy");
     t.ok(msg.list, "msg.list is truthy");
