@@ -3,7 +3,7 @@ NHK API for javascript [![Build Status](https://travis-ci.org/yosuke-furukawa/nh
 
 
 [![browser support](https://ci.testling.com/yosuke-furukawa/nhk_api.js.png)
-](https://ci.testling.com/yosuke-furukawa/nhk_api)
+](https://ci.testling.com/yosuke-furukawa/nhk_api.js)
 
 NHK has their televison program API.
 
