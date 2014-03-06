@@ -10,7 +10,7 @@ test(' format time 2014-03-05', function (t) {
 
   base._jpnize(now);
   var date = base._formatDate(now);
-  t.equal(date, "2014-03-05", date);
+  t.equal(date, "2014-03-05", now);
   t.end();
 });
 
@@ -20,10 +20,10 @@ test(' format time 2014-03-06', function (t) {
   now.setUTCFullYear(2014);
   now.setUTCMonth(3 - 1);
   now.setUTCDate(5);
-  now.setUTCHours(22);
+  now.setUTCHours(23);
 
   base._jpnize(now);
   var date = base._formatDate(now);
-  t.equal(date, "2014-03-06", date);
+  t.equal(date, "2014-03-06", now);
   t.end();
 });
