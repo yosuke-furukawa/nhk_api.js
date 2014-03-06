@@ -16,9 +16,9 @@
   "dependencies": {},
   "devDependencies": {
     "tape": "~2.10.2",
-    "moment": "~2.5.1",
     "uglifyify": "~1.2.3",
-    "browserify": "~3.32.0"
+    "browserify": "~3.32.0",
+    "moment-timezone": "0.0.3"
   },
   "testling": {
     "files": "test/*.js",

@@ -1,6 +1,6 @@
 var NHK = require('../index');
 var test = require('tape');
-var moment = require('moment');
+var moment = require('moment-timezone');
 
 // this apikey for test
 var apikey = process.env.NHK_API_KEY || require('../config/test.json').apikey;
@@ -9,7 +9,7 @@ var apikey = process.env.NHK_API_KEY || require('../config/test.json').apikey;
 test(' genre url ', function (t) {
   var nhk = new NHK(apikey);
   var url = nhk.genre.createUrl("130", "g1", "0000");
-  var date = moment().format("YYYY-MM-DD");
+  var date = moment().tz("Asia/Tokyo").format("YYYY-MM-DD");
   var expected = "http://api.nhk.or.jp/v1/pg/genre/130/g1/0000/" + date + ".json?key=" + apikey;
   t.equal(url, expected, "url is same");
   t.end();
@@ -18,7 +18,7 @@ test(' genre url ', function (t) {
 test(' genre url to specify keyword ', function (t) {
   var nhk = new NHK(apikey);
   var url = nhk.genre.createUrl("東京", "NHK総合1", "0000");
-  var date = moment().format("YYYY-MM-DD");
+  var date = moment().tz("Asia/Tokyo").format("YYYY-MM-DD");
   var expected = "http://api.nhk.or.jp/v1/pg/genre/130/g1/0000/" + date + ".json?key=" + apikey;
   t.equal(url, expected, "url is same");
   t.end();
@@ -27,7 +27,7 @@ test(' genre url to specify keyword ', function (t) {
 test(' genre url today ', function (t) {
   var nhk = new NHK(apikey);
   var url = nhk.genre.createUrl("東京", "NHK総合1", "0000", "today");
-  var date = moment().format("YYYY-MM-DD");
+  var date = moment().tz("Asia/Tokyo").format("YYYY-MM-DD");
   var expected = "http://api.nhk.or.jp/v1/pg/genre/130/g1/0000/" + date + ".json?key=" + apikey;
   t.equal(url, expected, "url is today");
   t.end();
@@ -36,8 +36,8 @@ test(' genre url today ', function (t) {
 test(' genre url tomorrow ', function (t) {
   var nhk = new NHK(apikey);
   var url = nhk.genre.createUrl("東京", "NHK総合1", "0000", "tomorrow");
-  var dayOfMonth = moment().date();
-  var date = moment().date(dayOfMonth + 1).format("YYYY-MM-DD");
+  var dayOfMonth = moment().tz("Asia/Tokyo").date();
+  var date = moment().tz("Asia/Tokyo").date(dayOfMonth + 1).format("YYYY-MM-DD");
 
   var expected = "http://api.nhk.or.jp/v1/pg/genre/130/g1/0000/" + date + ".json?key=" + apikey;
   t.equal(url, expected, "url is tomorrow");
